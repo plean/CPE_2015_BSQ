@@ -1,0 +1,184 @@
+#!/bin/bash
+
+function pause(){
+    read -p "$*"
+}
+clear
+echo -e "\033[1m\033[42m Bonjour et bon test\033[0m\033[0m"
+pause
+echo -e "\033[1m\033[42m Si vous êtes sage vous recevrez un cookie :)\033[0m\033[0m"
+###
+echo ""
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo ""
+echo -e "\033[1m\033[44m Pas d'arguments\033[0m\033[0m"
+echo ""
+echo -e "./bsq"
+echo ""
+../bsq
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo ""
+echo -e "\033[1m\033[44m Wrong File\033[0m\033[0m"
+echo ""
+echo -e "./bsq nothing"
+echo ""
+../bsq nothing
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo ""
+echo -e "\033[1m\033[44m Folder\033[0m\033[0m"
+echo ""
+echo -e "./bsq test_bsq"
+echo ""
+../bsq ../test_bsq
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Wrong Map\033[0m\033[0m"
+echo ""
+echo -e "./bsq debug_test1"
+echo ""
+cat debug_test1
+pause
+../bsq debug_test1
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Wrong Map\033[0m\033[0m"
+echo ""
+echo -e "./bsq debug_test2"
+echo ""
+cat debug_test2
+pause
+../bsq debug_test2
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Wrong Map\033[0m\033[0m"
+echo ""
+echo -e "./bsq debug_test3"
+echo ""
+cat debug_test3
+pause
+../bsq debug_test3
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Wrong Map\033[0m\033[0m"
+echo ""
+echo -e "./bsq debug_test4"
+echo ""
+cat debug_test4
+pause
+../bsq debug_test4
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Unusual test\033[0m\033[0m"
+echo ""
+echo -e "./bsq unusual_test1"
+echo ""
+../bsq unusual_test1
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Unusual test\033[0m\033[0m"
+echo ""
+echo -e "./bsq unusual_test2"
+echo ""
+../bsq unusual_test2
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Unusual test\033[0m\033[0m"
+echo ""
+echo -e "./bsq unusual_test3"
+echo ""
+../bsq unusual_test3
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Square 10x10\033[0m\033[0m"
+echo ""
+echo -e "time ./bsq test10"
+echo ""
+time ../bsq test10 > /dev/null
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Square 100x100\033[0m\033[0m"
+echo ""
+echo -e "time ./bsq test100"
+echo ""
+time ../bsq test100 > /dev/null
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Square 1000x1000\033[0m\033[0m"
+echo ""
+echo -e "time ./bsq test1000"
+echo ""
+time ../bsq test1000 > /dev/null
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Square 10000x10000 version 1\033[0m\033[0m"
+echo ""
+echo -e "time ./bsq test10000 (96M)"
+echo ""
+time ../bsq test10000 > /dev/null
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Square 10000x10000 version 2\033[0m\033[0m"
+echo ""
+echo -e "time ./bsq test10000_2 (96M)"
+echo ""
+time ../bsq test10000_2 > /dev/null
+##
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+echo -e "\033[1m\033[44m Square 100000x100000\033[0m\033[0m"
+echo ""
+echo -e "time ./bsq test100000 (9,4G)"
+pause
+echo ""
+echo -e "Non je rigole nous n'avons pas assez de temps.."
+echo -e "Mais calculer le plus grand carré de cette map me prend 18min."
+###
+pause 'Appuyez sur [Entrer] pour continuer ... '
+clear
+pause 'Voulez-vous vraiment continuer ? '
+clear
+echo ""
+echo -e "
+              .,-:;//;:=,
+          . :H@@@MM@M#H/.,+%;,
+       ,/X+ +M@@M@MM%=,-%HMMM@X/,
+     -+@MM; \$M@@MH+-,;XMMMM@MMMM@+-
+    ;@M@@M- XM@X;. -+XXXXXHHH@M@M#@/.
+  ,%MM@@MH ,@%=             .---=-=:=,.
+  =@#@@@MX.,                -%HX\$\$%%%:;
+ =-./@M@M\$                   .;@MMMM@MM:
+ X@/ -\$MM/                    . +MM@@@M\$
+,@M@H: :@:                    . =X#@@@@-
+,@@@MMX, .                    /H- ;@M@M=
+.H@@@@M@+,                    %MM+..%#\$.
+ /MMMM@MMH/.                  XM@MH; =;
+  /%+%\$XHH@\$=              , .H@@@@MX,
+   .=--------.           -%H.,@@@@@MX,
+   .%MM@@@HHHXX\$\$\$%+- .:\$MMX =M@@MM%.
+     =XMMM@MM@MM#H;,-+HMM@M+ /MMMX=
+       =%@M@M#@\$-.=\$@MM@@@M; %M%=
+         ,:+\$+-,/H#MMMMMMM@= =,
+               =++%%%%+/:-.
+
+"
+echo -e "\033[1m\033[41m The cake is a lie.\033[0m\033[0m"
+echo ""
+pause
+clear

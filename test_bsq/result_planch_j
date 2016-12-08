@@ -1,0 +1,21 @@
+(planch_j@pc-planch_j 17)./gene.perl 10000 10000 6 > test10000
+(planch_j@pc-planch_j 18)time ./bsq test10000 > /dev/null 
+
+real    0m5.649s
+user    0m5.425s
+sys     0m0.227s
+
+(planch_j@pc-planch_j 27)./gene.perl 10000 10000 50 > test10000_2
+(planch_j@pc-planch_j 28)time ./bsq test10000_2 > /dev/null 
+
+real    0m2.281s
+user    0m2.180s
+sys     0m0.102s
+
+
+(planch_j@pc-planch_j 488)./gene.perl 100000 100000 10 > test100000
+(planch_j@pc-planch_j 489)time ./bsq test100000 > /dev/null 
+    
+real    18m48.932s
+user    17m23.170s
+sys     0m12.455s

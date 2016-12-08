@@ -1,0 +1,2 @@
+J'ai mis quelques test avec des noms explicites ainsi que mon temps pour les plus longs. Si vous les passez tous (à par les debug_test) c'est que votre programe fonctionne. Essayez aussi d'envoyer en argument à votre programe un fichier qui n'existe pas ou un dossier.
+Les debug_test doivent renvoyer un message d'erreur.
